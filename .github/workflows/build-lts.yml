@@ -26,7 +26,7 @@ jobs:
       run: |
         set -eux
         git config --global advice.detachedHead false
-        git clone -b ${{ env.RELEASE_VERSION }} --single-branch https://github.com/vyos/vyos-build
+        git clone -b sagitta --single-branch https://github.com/vyos/vyos-build
         cd vyos-build
         git checkout -b build-branch
         cd ..
